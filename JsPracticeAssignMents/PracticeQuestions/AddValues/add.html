@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Values</title>
+</head>
+
+<body>
+    <div>
+        <label>Enter the Anything</label>
+        <input type="text" id="name" name="name" required>
+
+    </div>
+    <button id="btn">Click</button>
+    <div>
+        <label>Enterd String is </label>
+        <input type="text" id="answer" required>
+    </div>
+    <div>
+        <button id="reset">Reset</button>
+    </div>
+</body>
+
+<script>
+    //When I used with the tagname its not worked for me.
+    const btnRef = document.getElementById('btn');
+
+    btnRef.addEventListener('click', function (event) {
+        const targetRef = document.getElementById('name').value;
+        document.getElementById('answer').value = targetRef;
+    });
+    // Reset Button
+    const resetRef = document.getElementById('reset');
+    resetRef.addEventListener('click', function (event) {
+        document.getElementById('name').value = '';
+        document.getElementById('answer').value = '';
+    });
+</script>
+
+</html>
