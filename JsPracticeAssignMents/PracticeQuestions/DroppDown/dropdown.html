@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: #7FFFD4;
+            color: #333;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-options {
+            display: none;
+            position: absolute;
+            background-color: #CC56FF;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            z-index: 1;
+        }
+
+        .dropdown-option {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .dropdown-option:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropdown-button">Select a Subject</button>
+        <ul id="dropdown-options" class="dropdown-options">
+            <li class="dropdown-option">Mathematics</li>
+            <li class="dropdown-option">English</li>
+            <li class="dropdown-option">Physics</li>
+        </ul>
+    </div>
+
+    <script>
+        const dropdownButton = document.querySelector('.dropdown-button');
+        const dropdownOptions = document.querySelector('.dropdown-options');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdownOptions.style.display = dropdownOptions.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+
+</html>
