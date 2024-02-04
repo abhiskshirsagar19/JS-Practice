@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+In the HTML provided, there is a list with every item containing an individual delete button and a remove all button on top of the list.
+Write a JavaScript program that performs the following tasks:
+
+Task 1:
+Make all the individual delete buttons work.
+Set the list item's (li element) display style property as 'none'.
+
+Task 2:
+Make the Remove All button work.
+Set the entire list's (ul element) display style property as 'none'.
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <button id="all">Remove All</button>
+    <ul>
+        <li>
+            <p>Task - 1</p>
+            <button>delete</button>
+        </li>
+        <li>
+            <p>Task - 2</p>
+            <button>delete</button>
+        </li>
+        <li>
+            <p>Task - 3</p>
+            <button>delete</button>
+        </li>
+        <li>
+            <p>Task - 4</p>
+            <button>delete</button>
+        </li>
+    </ul>
+    <script>
+        // Write your JS program here =========
+
+        // const removeBtnref = document.getElementById('all');
+
+        // removeBtnref.addEventListener('click', function(event){
+        //     const ulref = document.querySelector('ul');
+        //     //const liref = document.querySelector('li');
+        //     ulref.remove();
+        // })
+
+        // const ulref = document.querySelector('ul');
+
+        const btnRemoveAll = document.querySelector('#all');
+        const ul = document.querySelector('ul');
+        btnRemoveAll.addEventListener('click', function (event) {
+            ul.style.display = 'none';
+        })
+        
+        ul.addEventListener('click', function (event) {
+            if (event.target.textContent == 'delete') {
+                const list = event.target.parentNode;
+                list.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

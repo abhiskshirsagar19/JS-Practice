@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            background-color: #4b4b4b;
+            padding: 5px;
+        }
+
+        .category-wrapper {
+            display: flex;
+            padding: 5px;
+            background-color: #3d3d3d;
+            margin-left: 50px;
+            gap: 5px;
+        }
+
+        .category {
+            width: 50px;
+            height: 20px;
+        }
+
+        .action-wrapper {
+            display: flex;
+            padding: 5px;
+            margin-left: 50px;
+        }
+
+        .action-wrapper .add {
+            color: white;
+        }
+
+        .action-wrapper .delete {
+            color: red;
+        }
+
+        .p1 {
+            background-color: lightpink;
+        }
+
+        .p2 {
+            background-color: lightgreen;
+        }
+
+        .p3 {
+            background-color: lightblue;
+        }
+
+        .p4 {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="category-wrapper">
+            <div class="catergoty p1"></div>
+            <div class="catergoty p2"></div>
+            <div class="catergoty p3"></div>
+            <div class="catergoty p4"></div>
+        </div>
+        <div class="action-wrapper">
+            <div class="add"></div>
+            <div class="delete"></div>
+        </div>
+    </header>
+</body>
+
+</html>
