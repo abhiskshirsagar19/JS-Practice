@@ -1,0 +1,9 @@
+function Outer(x) {
+    return function (y) {
+        return function (z) {
+            return x + y + z;
+        }
+    }
+}
+var result = Outer(2)(3)(4);
+console.log(result);
