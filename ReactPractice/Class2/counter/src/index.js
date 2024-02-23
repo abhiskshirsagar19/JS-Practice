@@ -1,24 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
+
 import reportWebVitals from './reportWebVitals';
-import Basicdetails from './Components/BasicDetails'
-//import { Skills, DummyText } from './Components/Skills'
-import Skills from './Components/Skills.js';
-
-
+import Counter from './Components/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
-    <Basicdetails></Basicdetails>
-    <Skills></Skills>
-  </div>
-
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
+  <React.StrictMode>
+    <Counter label="A" theme="red-theme" />
+    <Counter label="B" theme="blue-theme" />
+    <Counter label="C" theme="yellow-theme" />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

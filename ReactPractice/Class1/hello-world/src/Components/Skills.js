@@ -14,5 +14,5 @@ const Skills = () => {
         </div>
     )
 }
-//export default Skills;
-export const DummyText = "DummyText";
+export default Skills;
+//export const DummyText = "DummyText";
