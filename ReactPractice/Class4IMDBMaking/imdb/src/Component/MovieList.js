@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
+import Heading from "./Heading";
+import Pagination from "./Pagination";
 
 // const data = {
 //     dates: {
@@ -354,11 +356,27 @@ import MovieCard from "./MovieCard";
 // };
 const MovieList = () => {
     const [movies, setMovies] = useState([]);
-    fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=9f48a5b363c49e0c31bf3d09bb319827").then(res => res.json()).then(data => setMovies(data.results))
+    const fetchMovie = (pageNo) => {
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=9f48a5b363c49e0c31bf3d09bb319827&page=${pageNo}`)
+            .then(res => res.json())
+            .then(data => setMovies(data.results || []));
+
+
+    }
+    useEffect(() => {
+        fetchMovie(1);
+    }, [])
     return (
-        <div className="movie-list">
-            {movies.map(movie => (<MovieCard movie={movie} />))}
-        </div>
+        <>
+            <Heading />
+            <div className="movie-list">
+                {!movies.length && <h1>Loading....</h1>}
+                {movies.map(movie => (<MovieCard movie={movie} />))}
+
+            </div>
+            <Pagination onchangePage={fetchMovie} />
+        </>
+
     );
 };
 
