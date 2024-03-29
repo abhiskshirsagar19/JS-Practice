@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Counter</h1>
+        <div class="result">0</div>
+        <div class="input">Increment/Decrement by <input type="number" placeholder="Input" value=""> </div>
+    </div>
+    <div class="actions">
+        <button>+</button>
+        <button>-</button>
+    </div>
+    <div class="reset">
+        <button>Reset</button>
+    </div>
+    <script>
+        const resultRef = document.querySelector(".result");
+        const inputRef = document.querySelector(".input");
+        const incrementRef = document.querySelector(".actions button:nth-child(1)");
+        const decrementRef = document.querySelector(".actions button:nth-child(2)");
+        const resetRef = document.querySelector(".reset");
+
+        let count = 0;
+        let result = 0;
+        function addListener() {
+            inputRef.addEventListener('change', (e) => {
+                result = Number(e.target.value);
+            })
+
+            resultRef.addEventListener('click', (e) => {
+                UpdateResult();
+            })
+            incrementRef.addEventListener('click', (e) => {
+                increment();
+            })
+            decrementRef.addEventListener('click', (e) => {
+                decrement();
+            })
+            resetRef.addEventListener('click', (e) => {
+                reset();
+            })
+        }
+
+        function increment() {
+            count += result;
+            UpdateResult();
+        }
+        function decrement() {
+            count -= result;
+            UpdateResult();
+        }
+
+        function reset() {
+            count = 0
+            UpdateResult();
+        }
+        function UpdateResult() {
+            resultRef.innerText = count;
+        }
+        addListener();
+    </script>
+</body>
+
+</html>
