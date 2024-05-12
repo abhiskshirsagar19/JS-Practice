@@ -1,0 +1,33 @@
+1) What are the variables in JavaScript ?
+=>  
+var: Historically used for variable declaration in JavaScript, but it has some quirks like function scope rather than block scope. 
+     Nowadays, it's less commonly used due to the introduction of let and const.
+
+let: Introduced in ES6 (ECMAScript 2015), let allows you to declare variables that are block-scoped.
+     Block scope means the variable is only accessible within the block ({ }) in which it is defined.
+
+const: Also introduced in ES6, const is used to declare variables that cannot be reassigned. 
+      It creates a read-only reference to a value. However, it's important to note that if the value is an object or an array, the properties or elements of the object or array can still be mutated.
+
+let x = 10; // variable x can be reassigned
+const PI = 3.14; // PI cannot be reassigned, it's a constant
+
+// Block-scoped variable with let
+{
+  let y = 20;
+  console.log(y); // Output: 20
+}
+
+console.log(y); // Error: y is not defined, because it's scoped within the block
+
+// Modifying properties of a const object
+const person = {
+  name: 'John',
+  age: 30
+};
+
+person.age = 31; // This is allowed
+
+console.log(person.age); // Output: 31
+
+2) 

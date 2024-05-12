@@ -1,0 +1,144 @@
+	1) JavaScript Can Change HTML Content
+	2) JavaScript accepts both double and single quotes.
+	3) JavaScript Can Change HTML Attribute Values.
+	4) JavaScript Can Change HTML Styles (CSS).
+	5) JavaScript Can Hide HTML Elements.
+	6) JavaScript Can Show HTML Elements.
+	7) JavaScript and Java are completely different languages, both in concept and design.
+	8) JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+	9) ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+	10) In HTML, JavaScript code is inserted between <script> and </script> tags.
+	11) A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+	12) You can place any number of scripts in an HTML document.
+	13) Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+	14) Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.
+	15)  External scripts are practical when the same code is used in many different web pages.
+	16) JavaScript files have the file extension .js.
+	17) To use an external script, put the name of the script file in the src (source) attribute of a <script> tag.
+	18) You can place an external script reference in <head> or <body> as you like.
+	19) JavaScript does not have any print object or print methods.
+	20) A computer program is a list of "instructions" to be "executed" by a computer.
+	21) In a programming language, these programming instructions are called statements.
+	22) A JavaScript program is a list of programming statements.
+	23) In HTML, JavaScript programs are executed by the web browser.
+	24) JavaScript programs (and JavaScript statements) are often called JavaScript code.
+	25) For best readability, programmers often like to avoid code lines longer than 80 characters.
+	26) JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+	27) The purpose of code blocks is to define statements to be executed together.
+	28) JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+	29) JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.
+	30) The JavaScript syntax defines two types of values Fixed values,Variable values
+	31) Fixed values are called Literals.
+	32) Variable values are called Variables.
+	33) Numbers are written with or without decimals.
+	34) Strings are text, written within double or single quotes.
+	35) In a programming language, variables are used to store data values.
+	36) JavaScript uses the keywords var, let and const to declare variables.
+	37) An equal sign is used to assign values to variables.
+	38) JavaScript uses arithmetic operators ( + - * / ) to compute values.
+	39) JavaScript uses an assignment operator ( = ) to assign values to variables.
+	40) An expression is a combination of values, variables, and operators, which computes to a value.
+	41) JavaScript keywords are used to identify actions to be performed.
+	42) The let keyword tells the browser to create variables.
+	43) Code after double slashes // or between /* and */ is treated as a comment.
+	44) Identifiers are used to name variables and keywords, and functions.
+	45) The rules for legal names are the same in most programming languages.
+	46) A JavaScript name must begin with:A letter (A-Z or a-z), A dollar sign ($) Or  an underscore (_)
+	47) Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+	48) JavaScript uses the Unicode character set.
+	49) Unicode covers (almost) all the characters, punctuations, and symbols in the world.
+	50) It is most common to use single line comments.
+	51) Block comments are often used for formal documentation.
+	52) Variables are Containers for Storing Data.
+	53) JavaScript Variables can be declared in 4 ways: Automatically, Using var, Using let, Using const.
+	54) It is considered good programming practice to always declare variables before use.
+	55) The var keyword was used in all JavaScript code from 1995 to 2015.
+	56) The let and const keywords were added to JavaScript in 2015.
+	57) The var keyword should only be used in code written for older browsers.
+	58)  Always declare variables
+	59)  Always use const if the value should not be changed
+	60)  Always use const if the type should not be changed (Arrays and Objects)
+	61)  Only use let if you can't use const
+	62)  Only use var if you MUST support old browsers.
+	63) Variables are containers for storing values.
+	64) All JavaScript variables must be identified with unique names.
+	65) These unique names are called identifiers.
+	66) Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+	67) JavaScript identifiers are case-sensitive.
+	68) In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+	69) The "equal to" operator is written like == in JavaScript.
+	70) JavaScript variables can hold numbers like 100 and text values like "John Doe".
+	71) In programming, text values are called text strings.
+	72) JavaScript can handle many types of data, but for now, just think of numbers and strings.
+	73) Strings are written inside double or single quotes. Numbers are written without quotes.
+	74) If you put a number in quotes, it will be treated as a text string.
+	75) Creating a variable in JavaScript is called "declaring" a variable.
+	76) After the declaration, the variable has no value (technically it is undefined).
+	77) To assign a value to the variable, use the equal sign.
+	78) It's a good programming practice to declare all variables at the beginning of a script.
+	79) In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+	80) A variable declared without a value will have the value undefined.
+	81) If you re-declare a JavaScript variable declared with var, it will not lose its value.
+	82) You cannot re-declare a variable declared with let or const.
+	83) If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+	84) Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names.
+	85) Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library.
+	86) In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements. In jQuery $("p"); means "select all p elements".
+	87) Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names.
+	88) Using the underscore is not very common in JavaScript, but a convention among professional programmers is to use it as an alias for "private (hidden)" variables.
+	89) The let keyword was introduced in ES6 (2015).
+	90) Variables declared with let have Block Scope.
+	91) Variables declared with let must be Declared before use.
+	92) Variables declared with let cannot be Redeclared in the same scope.
+	93) Before ES6 (2015), JavaScript did not have Block Scope.
+	94) JavaScript had Global Scope and Function Scope.
+	95) ES6 introduced the two new JavaScript keywords: let and const.
+	96) These two keywords provided Block Scope in JavaScript.
+	97) Variables declared with the var always have Global Scope.
+	98) Variables declared with the var keyword can NOT have block scope.
+	99) Variables declared with varinside a { } block can be accessed from outside the block.
+	100) Variables defined with let can not be redeclared.
+	101) You can not accidentally redeclare a variable declared with let.
+	102) Redeclaring a variable using the var keyword can impose problems.
+	103) Redeclaring a variable inside a block will also redeclare the variable outside the block.
+	104) Redeclaring a variable using the let keyword can solve this problem.
+	105) Redeclaring a variable inside a block will not redeclare the variable outside the block.
+	106) let and const have block scope.
+	107) let and const can not be redeclared.
+	108) let and const must be declared before use.
+	109) let and const does not bind to this.
+	110) let and const are not hoisted.
+	111) var does not have to be declared.
+	112) var is hoisted.
+	113) var binds to this.
+	114) Redeclaring a JavaScript variable with var is allowed anywhere in a program.
+	115) With let, redeclaring a variable in the same block is NOT allowed.
+	116) Redeclaring a variable with let, in another block, IS allowed.
+	117) Variables defined with var are hoisted to the top and can be initialized at any time.
+	118) Variables defined with let are also hoisted to the top of the block, but not initialized.
+	119) Meaning: Using a let variable before it is declared will result in a ReferenceError.
+	120) The const keyword was introduced in ES6 (2015).
+	121) Variables defined with const cannot be Redeclared.
+	122) Variables defined with const cannot be Reassigned.
+	123) Variables defined with const have Block Scope.
+	124) A variable defined with the const keyword cannot be reassigned.
+	125) JavaScript const variables must be assigned a value when they are declared.
+	126) Always declare a variable with const when you know that the value should not be changed.
+	127) Use const when you declare A new Array, A new Object, A new Function, A new RegExp.
+	128) The keyword const is a little misleading.
+	129) It does not define a constant value. It defines a constant reference to a value.
+	130) Because of this you can NOT Reassign a constant value, Reassign a constant array, Reassign a constant object.
+	131) But you CAN Change the elements of constant array, Change the properties of constant object.
+	132) You can change the elements of a constant array But you can NOT reassign the array.
+	133) You can change the properties of a constant object But you can NOT reassign the object.
+	134) let and const have block scope.
+	135) let and const can not be redeclared.
+	136) let and const must be declared before use.
+	137) let and const does not bind to this.
+	138) let and const are not hoisted.
+	139) var does not have to be declared.
+	140) var is hoisted.
+	141) var binds to this.
+	
+	
+	
