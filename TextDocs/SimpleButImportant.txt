@@ -139,6 +139,103 @@
 	139) var does not have to be declared.
 	140) var is hoisted.
 	141) var binds to this.
-	
-	
+	142) Javascript operators are used to perform different types of mathematical and logical computations.
+	143) The Assignment Operator = assigns values.
+	144) The Addition Operator + adds values.
+	145) The Multiplication Operator * multiplies values.
+	146) The Comparison Operator > compares values.
+	147) There are different types of JavaScript operators:
+	148) Arithmetic Operators, Assignment Operators, Comparison Operators, String Operators, Logical Operators, Bitwise Operators, Ternary Operators,
+	149) Type Operators.
+	150) If you add a number and a string, the result will be a string!
+	151) Bit operators work on 32 bits numbers.
+	152) The numbers (in an arithmetic operation) are called operands.
+	153) The operation (to be performed between the two operands) is defined by an operator.
+	154) When many operations have the same precedence (like addition and subtraction or multiplication and division), they are computed from left to right
+	155) The <<= Operator.TheLeft Shift Assignment Operator left shifts a variable.
+	156) The >>= Operator.The Right Shift Assignment Operator right shifts a variable (signed).
+	157) The >>>= Operator. The Unsigned Right Shift Assignment Operator right shifts a variable (unsigned).
+	158) The &= Operator. The Bitwise AND Assignment Operator does a bitwise AND operation on two operands and assigns the result to the the variable.
+	159) The |= Operator. The Bitwise OR Assignment Operator does a bitwise OR operation on two operands and assigns the result to the variable.
+	160) The ^= Operator. The Bitwise XOR Assignment Operator does a bitwise XOR operation on two operands and assigns the result to the variable.
+	161) The &&= Operator. The Logical AND assignment operator is used between two values. If the first value is true, the second value is assigned.
+	162) The ||= Operator. The Logical OR assignment operator is used between two values. If the first value is false, the second value is assigned.
+	163) The ??= Operator. The Nullish coalescing assignment operator is used between two values. If the first value is undefined or null, the second value is assigned.
+	164) JavaScript has 8 Datatypes 1. String 2. Number 3. Bigint 4. Boolean 5. Undefined 6. Null 7. Symbol 8. Object. 
+	165) The object data type can contain:1. An object 2. An array 3. A date
+	166) A JavaScript variable can hold any type of data.
+	167) JavaScript has dynamic types. This means that the same variable can be used to hold different data types.
+	168) A string (or a text string) is a series of characters like "John Doe".
+	169) Strings are written with quotes. You can use single or double quotes.
+	170) All JavaScript numbers are stored as decimal numbers (floating point).
+	171) Numbers can be written with, or without decimals.
+	172) Extra large or extra small numbers can be written with scientific (exponential) notation.
+	173) Javascript numbers are always one type: double (64-bit floating point).
+	174) All JavaScript numbers are stored in a 64-bit floating-point format.
+	175) JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+	176) Booleans can only have two values: true or false.
+	177) Booleans are often used in conditional testing.
+	178) JavaScript arrays are written with square brackets.
+	179) Array items are separated by commas.
+	180) Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+	181) JavaScript objects are written with curly braces {}.
+	182) Object properties are written as name:value pairs, separated by commas.
+	183) You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+	184) The typeof operator returns the type of a variable or an expression.
+	185) In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+	186) Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+	187) An empty value has nothing to do with undefined.
+	188) An empty string has both a legal value and a type.
+	189) A JavaScript function is a block of code designed to perform a particular task.
+	190) A JavaScript function is executed when "something" invokes it (calls it).
+	191) A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+	192) Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+	193) The parentheses may include parameter names separated by commas: (parameter1, parameter2, ...).
+	194) The code to be executed, by the function, is placed inside curly brackets: {}.
+	195) Function parameters are listed inside the parentheses () in the function definition.
+	196) Function arguments are the values received by the function when it is invoked.
+	197) Inside the function, the arguments (the parameters) behave as local variables.
+	198) The code inside the function will execute when "something" invokes (calls) the function: When an event occurs (when a user clicks a button)
+	199) When it is invoked (called) from JavaScript code , Automatically (self invoked).
+	200) When JavaScript reaches a return statement, the function will stop executing.
+	201) If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+	202) Functions often compute a return value. The return value is "returned" back to the "caller".
+	203) With functions you can reuse code.
+	204) You can write code that can be used many times.
+	205) You can use the same code with different arguments, to produce different results.
+	206) The () (function call operator) operator invokes (calls) the function.
+	207) Accessing a function without () returns the function and not the function result.
+	208) Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+	209) Variables declared within a JavaScript function, become LOCAL to the function.
+	210) Local variables can only be accessed from within the function.
+	211) Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+	212) Local variables are created when a function starts, and deleted when the function is completed.
+	213) Objects are variables too. But objects can contain many values.
+	214) The values are written as name:value pairs (name and value separated by a colon).
+	215) It is a common practice to declare objects with the const keyword.
+	216) You define (and create) a JavaScript object with an object literal.
+	217) The name:values pairs in JavaScript objects are called properties.
+	218) JavaScript objects are containers for named values called properties.
+	219) Objects can also have methods.
+	220) Methods are actions that can be performed on objects.
+	221) Methods are stored in properties as function definitions.
+	222) A method is a function stored as a property.
+	223) In JavaScript, the this keyword refers to an object.
+	224) Which object depends on how this is being invoked (used or called).
+	225) The this keyword refers to different objects depending on how it is used.
+	226) In an object method, this refers to the object.
+	227) Alone, this refers to the global object.
+	228) In a function, this refers to the global object.
+	229) In a function, in strict mode, this is undefined.
+	230) In an event, this refers to the element that received the event.
+	231) Methods like call(), apply(), and bind() can refer this to any object.
+	232) this is not a variable. It is a keyword. You cannot change the value of this.
+	233) In a function definition, this refers to the "owner" of the function.
+	234) In the example above, this is the person object that "owns" the fullName function.
+	235) In other words, this.firstName means the firstName property of this object.
+	236) If you access a method without the () parentheses, it will return the function definition.
+	237) Do Not Declare Strings, Numbers, and Booleans as Objects.
+	238) When a JavaScript variable is declared with the keyword "new", the variable is created as an object.
+    239) Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+	https://www.w3schools.com/js/js_events.asp
 	
