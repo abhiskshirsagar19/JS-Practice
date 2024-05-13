@@ -1,0 +1,97 @@
+	1. React is a JavaScript library for building user interfaces.
+	2. React is used to build single-page applications.
+	3. React allows us to create reusable UI components.
+	4. The create-react-app tool is an officially supported way to create React applications.
+	5. Node.js is required to use create-react-app.
+	6. Open your terminal in the directory you would like to create your application.
+	7. Run this command to create a React application named my-react-app.
+	8. If you've previously installed create-react-app globally, it is recommended that you uninstall the package to ensure npx always uses the latest version of create-react-app. 
+	9. To uninstall, run this command: npm uninstall -g create-react-app.
+	10. React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.
+	11. React is a tool for building UI components.
+	12. React creates a VIRTUAL DOM in memory.
+	13. Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
+	14. React only changes what needs to be changed!
+	15. React finds out what changes have been made, and changes only what needs to be changed.
+	16. React.JS was first used in 2011 for Facebook's Newsfeed feature.
+	17. Facebook Software Engineer, Jordan Walke, created it.
+	18. Current version of create-react-app is v5.0.1 (April 2022).
+	19. create-react-app includes built tools such as webpack, Babel, and ESLint.
+	20. To use React in production, you need npm which is included with Node.js.
+	21. Look in the my-react-app directory, and you will find a src folder. Inside the src folder there is a file called App.js.
+	22. To install the latest version, from your project folder run the following from the terminal: npm i react@latest react-dom@latest
+	23. React uses ES6, and you should be familiar with some of the new features like:Classes, Arrow Functions, Variables (let, const, var),
+	24. Array Methods like .map(), Destructuring, Modules, Ternary Operator, Spread Operator.
+	25. A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.
+	26. Notice the case of the class name. We have begun the name, "Car", with an uppercase character. This is a standard naming convention for classes.
+	27. The constructor function is called automatically when the object is initialized.
+	28. To create a class inheritance, use the extends keyword.
+	29. A class created with a class inheritance inherits all the methods from another class.
+	30. The super() method refers to the parent class.
+	31. By calling the super() method in the constructor method, we call the parent's constructor method and get access to the parent's properties and methods.
+	32. Arrow functions allow us to write shorter function syntax.
+	33.  If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword.
+	34. Arrow Functions Return Value by Default.
+	35. This works only if the function has only one statement.
+	36. If you have parameters, you pass them inside the parentheses.
+	37. In fact, if you have only one parameter, you can skip the parentheses as well.
+	38. The handling of this is also different in arrow functions compared to regular functions.
+	39. In short, with arrow functions there is no binding of this.
+	40. In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
+	41. With arrow functions, the this keyword always represents the object that defined the arrow function.
+	42. With a regular function, this represents the object that called the function.
+	43. One of the most useful in React is the .map() array method.
+	44. The .map() method allows you to run a function on each item in the array, returning a new array as the result.
+	45. In React, map() can be used to generate lists.
+	46. Destructuring is exactly the same. We may have an array or object that we are working with, but we only need some of the items contained in these.
+	47. Destructuring makes it easy to extract only what is needed.
+	48. When destructuring arrays, the order that variables are declared is important.
+	49. Destructuring comes in handy when a function returns an array.
+	50. Notice that the object properties do not have to be declared in a specific order.
+	51. We can even destructure deeply nested objects by referencing the nested object then using a colon and curly braces to again destructure the items needed from the nested object.
+	52. The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+	53. The spread operator is often used in combination with destructuring.
+	54. JavaScript modules allow you to break up your code into separate files.
+	55. This makes it easier to maintain the code-base.
+	56. ES Modules rely on the import and export statements.
+	57. You can export a function or variable from any file.
+	58. There are two types of exports: Named and Default.
+	59. You can only have one default export in a file.
+	60. You can import modules into a file in two ways, based on if they are named exports or default exports.
+	61. Named exports must be destructured using curly braces. Default exports do not.
+	62. The ternary operator is a simplified conditional operator like if / else.
+	63. Syntax: condition ? <expression if true> : <expression if false>
+	64. React's goal is in many ways to render HTML in a web page.
+	65. React renders HTML to the web page by using a function called createRoot() and its method render().
+	66. The createRoot() function takes one argument, an HTML element.
+	67. The purpose of the function is to define the HTML element where a React component should be displayed.
+	68. The render() method is then called to define the React component that should be rendered.
+	69. But render where?There is another folder in the root directory of your React project, named "public". In this folder, there is an index.html file.
+	70. You'll notice a single <div> in the body of this file. This is where our React application will be rendered.
+	71. Note that the element id does not have to be called "root", but this is the standard convention.
+	72. The root node is the HTML element where you want to display the result.
+	73. It is like a container for content managed by React.
+	74. It does NOT have to be a <div> element and it does NOT have to have the id='root'.
+	75. JSX stands for JavaScript XML.
+	76. JSX allows us to write HTML in React.
+	77. JSX makes it easier to write and add HTML in React.
+	78. JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.
+	79. JSX converts HTML tags into react elements.
+	80. JSX is an extension of the JavaScript language based on ES6, and is translated into regular JavaScript at runtime.
+	81. With JSX you can write expressions inside curly braces { }.
+	82. The expression can be a React variable, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result.
+	83. The HTML code must be wrapped in ONE top level element.
+	84. So if you like to write two paragraphs, you must put them inside a parent element, like a div element.
+	85. JSX will throw an error if the HTML is not correct, or if the HTML misses a parent element.
+	86. Alternatively, you can use a "fragment" to wrap multiple lines. This will prevent unnecessarily adding extra nodes to the DOM.
+	87. A fragment looks like an empty HTML tag: <></>.
+	88. JSX follows XML rules, and therefore HTML elements must be properly closed.
+	89. Close empty elements with />.
+	90. The class attribute is a much used attribute in HTML, but since JSX is rendered as JavaScript, and the class keyword is a reserved word in JavaScript, you are not allowed to use it in JSX.
+	91. Use attribute className instead.
+	92. JSX solved this by using className instead. When JSX is rendered, it translates className attributes into class attributes.
+	93. Use attribute className instead of class in JSX.
+	94. React supports if statements, but not inside JSX.
+	95. To be able to use conditional statements in JSX, you should put the if statements outside of the JSX, or you could use a ternary expression instead.
+	96. Note that in order to embed a JavaScript expression inside JSX, the JavaScript must be wrapped with curly braces, {}.
+https://www.w3schools.com/REACT/react_components.asp
