@@ -19,7 +19,7 @@ const { nameemp, epmlocation } = emp2;
 
 
 
-console.log(nameemp, epmlocation)
+console.log(nameemp, epmlocation);
 
 
 
